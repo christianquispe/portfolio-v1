@@ -9,7 +9,7 @@ interface LayoutProps {
 const Layout: React.FC<LayoutProps> = ({ children, title }) => {
   return (
     <>
-      <header className="container mx-auto py-4">
+      <header className="container mx-auto">
 				<NavBar>
 					<NavItem>About me?</NavItem>
 					<NavItem>Portfolio</NavItem>
