@@ -1,17 +1,26 @@
 import Head from "next/head";
 
+import { NavBar, Item as NavItem } from "./NavBar";
+
 interface LayoutProps {
   title: string;
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, title }) => {
   return (
-    <div className="bg-gray-100">
-      <Head>
-        <title>{title}</title>
-      </Head>
+    <>
+      <header className="container mx-auto py-4">
+				<NavBar>
+					<NavItem>About me?</NavItem>
+					<NavItem>Portfolio</NavItem>
+					<NavItem>Contact</NavItem>
+				</NavBar>
+        <Head>
+          <title>{title}</title>
+        </Head>
+      </header>
       {children}
-    </div>
+    </>
   );
 };
 export default Layout;

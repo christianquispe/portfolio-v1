@@ -1,9 +1,10 @@
 import Layout from "../Layout";
+import { Banner } from "../Widgets";
 
 const Home = () => {
   return (
     <Layout title="Christian Quispe">
-      <span>Home</span>
+      <Banner />
     </Layout>
   );
 };
