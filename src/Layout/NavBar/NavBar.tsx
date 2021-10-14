@@ -24,7 +24,11 @@ const NavBar: React.FC = (props) => {
           </svg>
         </button>
       </div>
-      <ul className={`w-full block lg:flex lg:items-center text-sm md:text-base lg:w-auto${collapse || ' hidden'}`}>
+      <ul
+        className={`lg:flex lg:items-center text-sm md:text-base lg:w-max${
+          collapse ? " block w-full" : " hidden"
+        }`}
+      >
         {children}
       </ul>
     </nav>
