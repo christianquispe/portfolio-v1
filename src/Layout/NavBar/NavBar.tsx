@@ -7,7 +7,7 @@ const NavBar: React.FC = (props) => {
   return (
     <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-6">
       <div className="flex items-center flex-shrink-0 mr-6">
-        <span className="font-semibold text-xl tracking-tight">Christian</span>
+        <span className="text-xl tracking-tight">Christian</span>
       </div>
       <div className="block lg:hidden">
         <button
