@@ -6,7 +6,7 @@ interface LayoutProps {
 
 const Layout: React.FC<LayoutProps> = ({ children, title }) => {
   return (
-    <div>
+    <div className="bg-gray-100">
       <Head>
         <title>{title}</title>
       </Head>
