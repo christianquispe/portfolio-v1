@@ -1,0 +1,11 @@
+{
+  "Navigation": {
+    "title": "Christian logo",
+    "aboutMe": "About me",
+    "contact": "Contac",
+    "portfolio": "Portfolio",
+    "switchLocale": "Spanish",
+    "spanish": "Spanish",
+		"english": "English"
+  }
+}

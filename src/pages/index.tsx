@@ -15,6 +15,7 @@ export function getStaticProps({ locale }) {
     props: {
       messages: {
         ...require(`../messages/home/${locale}.json`),
+        ...require(`../messages/shared/${locale}.json`),
       },
       now: new Date().getTime(),
     },
