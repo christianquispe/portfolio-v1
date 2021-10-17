@@ -1,7 +1,7 @@
 const Banner: React.FC = () => {
   return (
     <>
-      <div className="Banner grid md:grid-cols-2">
+      <div className="Banner lg:pb-20 md:container mx-auto grid md:grid-cols-2">
         <div className="hidden md:block">
           <figure>
             <img src="/icons/web-develop.jpg" alt="" />
