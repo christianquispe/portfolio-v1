@@ -1,13 +1,20 @@
+import { useRouter } from "next/dist/client/router";
+import { useTranslations } from "use-intl";
 import { Section } from "../Components";
 
 const About: React.FC = () => {
+  const t = useTranslations("AboutMe");
+  const { locale } = useRouter();
+
   return (
     <>
       <Section bg="gray">
         <div className="flex container mx-auto gap-4">
           <div className="w-full lg:w-1/3 flex justify-center items-center">
             <div className="About__contain-left lg:rounded-lg lg:shadow-lg lg:py-4 lg:px-6 lg:absolute lg:max-w-lg">
-              <h2 className="About__title text-primary-100 text-2xl">About</h2>
+              <h2 className="About__title text-primary-100 text-2xl">
+                {t("title", { locale })}
+              </h2>
               <p className="text-justify sm:text-left">
                 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
                 fugit, corrupti neque veritatis soluta ut ipsa sed eligendi id

@@ -1,4 +1,10 @@
+import { useRouter } from "next/dist/client/router";
+import { useTranslations } from "use-intl";
+
 const Banner: React.FC = () => {
+  const t = useTranslations("Banner");
+  const { locale } = useRouter();
+
   return (
     <>
       <div className="Banner lg:pb-20 md:container mx-auto grid md:grid-cols-2">
@@ -17,8 +23,14 @@ const Banner: React.FC = () => {
         </div>
         <div className="Banner__gb-img shadow-sm md:bg-white flex justify-start items-end md:items-center p-4 md:pl-4">
           <div className="bg-white rounded-md py-3 px-5">
-            <p className="text-3xl">Hi, I'm Christian</p>
-            <p>Front End Developer</p>
+            <p className="text-3xl">
+              {t("title", {
+                locale,
+              })}
+            </p>
+            <p>{t("label", {
+                locale,
+              })}</p>
           </div>
         </div>
       </div>

@@ -27,6 +27,13 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
               <a>Contact</a>
             </Link>
           </NavItem>
+          <Link href="/" locale="es">
+            <a>
+              <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                Español
+              </button>
+            </a>
+          </Link>
         </NavBar>
         <Head>
           <title>{title}</title>

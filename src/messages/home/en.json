@@ -1,0 +1,10 @@
+{
+  "Banner": {
+    "title": "Hi, I'm Christian",
+    "label": "Front End Developer"
+  },
+	"AboutMe": {
+    "title": "About me",
+    "description": "Front End Developer"
+  }
+}
