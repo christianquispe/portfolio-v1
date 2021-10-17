@@ -1,5 +1,5 @@
 import Banner from './Banner'
 import About from './About'
-import Portfolio from './Portfolio'
+import WhatIDo from './WhatIDo'
 
-export { Banner, About, Portfolio }
+export { Banner, About, WhatIDo }

@@ -1,12 +1,12 @@
 import Layout from "../Layout";
-import { About, Banner, Portfolio } from "../Widgets";
+import { About, Banner, WhatIDo } from "../Widgets";
 
 const Home = () => {
   return (
     <Layout title="Christian Quispe">
       <Banner />
       <About />
-      <Portfolio />
+      <WhatIDo />
     </Layout>
   );
 };
