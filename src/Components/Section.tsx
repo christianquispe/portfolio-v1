@@ -11,7 +11,7 @@ const Section: React.FC<SectionProps> = (props) => {
 
   return (
     <section
-      className={`py-14 px-4 lg:p-20${
+      className={`py-14 px-4 lg:py-20 lg:px-20${
         className ? ` ${className}` : ""
       }${bg === 'gray' ? ' bg-gray-100' : ''}`}
       {...rest}
