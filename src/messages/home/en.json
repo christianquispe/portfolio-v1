@@ -3,8 +3,12 @@
     "title": "Hi, I'm Christian",
     "label": "Front End Developer"
   },
-	"AboutMe": {
+  "AboutMe": {
     "title": "About me",
-    "description": "Front End Developer"
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugit, corrupti neque veritatis soluta ut ipsa sed eligendi id natus necessitatibus provident atque quibusdam ex, quos molestias tempore ius. Quae."
+  },
+  "Portfolio": {
+    "title": "What I do",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugit, corrupti neque veritatis soluta ut ipsa sed eligendi id natus necessitatibus provident atque quibusdam ex, quos molestias tempore ius. Quae."
   }
 }

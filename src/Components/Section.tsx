@@ -3,7 +3,7 @@ interface SectionProps
     React.HTMLAttributes<HTMLElement>,
     HTMLElement
   > {
-  bg: 'gray' | 'white';
+  bg?: 'gray' | 'white';
 }
 
 const Section: React.FC<SectionProps> = (props) => {

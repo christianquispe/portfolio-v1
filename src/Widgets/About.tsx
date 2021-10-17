@@ -16,10 +16,7 @@ const About: React.FC = () => {
                 {t("title", { locale })}
               </h2>
               <p className="text-justify sm:text-left">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic,
-                fugit, corrupti neque veritatis soluta ut ipsa sed eligendi id
-                natus necessitatibus provident atque quibusdam ex, quos
-                molestias tempore ius. Quae.
+                {t("description", { locale })}
               </p>
             </div>
           </div>

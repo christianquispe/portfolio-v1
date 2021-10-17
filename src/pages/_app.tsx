@@ -25,7 +25,7 @@ function MyApp({ Component, pageProps }) {
       // in a different time zone.
       timeZone="Peru/Lima"
     >
-      <Component {...pageProps} />;
+      <Component {...pageProps} />
     </NextIntlProvider>
   );
 }
