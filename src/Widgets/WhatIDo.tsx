@@ -1,19 +1,31 @@
 import { useRouter } from "next/dist/client/router";
+import {
+  DiHtml5,
+  DiSass,
+  DiLess,
+  DiCss3,
+  DiJsBadge,
+  DiReact,
+  DiTypo3,
+  DiNodejs,
+  DiMongodb,
+} from "react-icons/di";
 import { useTranslations } from "use-intl";
 import { Section } from "../Components";
+import { SvgJavascript } from "../icons";
 
 const skills = [
-  { name: "HTML", icon: "icon" },
-  { name: "SCSS", icon: "icon" },
-  { name: "LESS", icon: "icon" },
-  { name: "CSS", icon: "icon" },
-  { name: "ECMAScript", icon: "icon" },
-  { name: "React", icon: "icon" },
-  { name: "Typescript", icon: "icon" },
-  { name: "Graphql", icon: "icon" },
-  { name: "Node", icon: "icon" },
-  { name: "Express", icon: "icon" },
-  { name: "Mongo DB", icon: "icon" },
+  { name: "HTML", icon: <DiHtml5 /> },
+  { name: "SCSS", icon: <DiSass /> },
+  { name: "LESS", icon: <DiLess /> },
+  { name: "CSS", icon: <DiCss3 /> },
+  { name: "Javascript", icon: <SvgJavascript /> },
+  { name: "React", icon: <DiReact /> },
+  { name: "Typescript", icon: <DiTypo3 /> },
+  { name: "Graphql", icon: <DiJsBadge /> },
+  { name: "Node", icon: <DiNodejs /> },
+  { name: "Express", icon: <DiJsBadge /> },
+  { name: "Mongo DB", icon: <DiMongodb /> },
 ];
 
 interface SkillsProps {
@@ -25,7 +37,7 @@ const Skills: React.FC<SkillsProps> = (props) => {
 
   return (
     <ul
-      className={`max-w-3xl mx-auto flex justify-center flex-wrap gap-2${
+      className={`max-w-3xl mx-auto flex justify-center flex-wrap gap-4${
         moreClass ? " " + moreClass : ""
       }`}
     >
@@ -42,14 +54,25 @@ const SkillsItem: React.FC<SkillsItemProps> = (props) => {
   const { children, icon } = props;
 
   return (
-    <li className="bg-gray-50 hover:bg-gray-200 cursor-pointer p-2 rounded-lg">
-      {children} <span style={{ marginLeft: "5px" }}>{icon}</span>
-    </li>
+    <>
+      <li className="bg-gray-50 hover:bg-gray-200 cursor-pointer p-2 rounded-lg flex items-center">
+        {children}{" "}
+        <span style={{ marginLeft: "5px", fontSize: "1.5rem" }}>{icon}</span>
+      </li>
+      <style jsx>{`
+        li {
+          transition: all 0.2s linear;
+        }
+        li:hover {
+          transform: translateY(-0.2rem);
+        }
+      `}</style>
+    </>
   );
 };
 
 const Portfolio: React.FC = () => {
-  const t = useTranslations("Portfolio");
+  const t = useTranslations("WhatIDo");
   const { locale } = useRouter();
 
   return (
@@ -66,7 +89,9 @@ const Portfolio: React.FC = () => {
           </div>
           <Skills moreClass="max-w-3xl mx-auto">
             {skills.map((skill, index) => (
-              <SkillsItem key={index} icon={skill.icon}>{skill.name}</SkillsItem>
+              <SkillsItem key={index} icon={skill.icon}>
+                {skill.name}
+              </SkillsItem>
             ))}
           </Skills>
         </div>
