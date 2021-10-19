@@ -6,7 +6,7 @@ const NavBar: React.FC = (props) => {
 
   return (
     <>
-      <nav className="flex items-center justify-between flex-wrap bg-teal-500 p-4">
+      <nav className="sticky flex items-center justify-between flex-wrap bg-teal-500 p-4">
         <div className="block">
           <img
             className="Logo"

@@ -1,4 +1,4 @@
-import { useRouter } from "next/dist/client/router";
+import { useRouter } from "next/router";
 import {
   DiHtml5,
   DiSass,
@@ -80,7 +80,7 @@ const Portfolio: React.FC = () => {
       <Section>
         <div className="container">
           <div className="max-w-md mx-auto mb-12">
-            <h2 className="Portfolio__title text-center text-primary-100 text-3xl lg:text-4xl">
+            <h2 className="Portfolio__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
               {t("title", { locale })}
             </h2>
             <p className="text-justify sm:text-center">

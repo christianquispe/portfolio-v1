@@ -19,8 +19,13 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
       <header className="container mx-auto">
         <NavBar>
           <NavItem>
-            <Link href="#about">
+            <Link href="#aboutMe">
               <a>{t("aboutMe", { locale })}</a>
+            </Link>
+          </NavItem>
+          <NavItem>
+            <Link href="#whatIDo">
+              <a>{t("whatIDo", { locale })}</a>
             </Link>
           </NavItem>
           <NavItem>
@@ -29,7 +34,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
             </Link>
           </NavItem>
           <NavItem>
-            <Link href="#contac">
+            <Link href="#contact">
               <a>{t("contact", { locale })}</a>
             </Link>
           </NavItem>

@@ -1,5 +1,5 @@
 import Layout from "../Layout";
-import { About, Banner, WhatIDo } from "../Widgets";
+import { About, Banner, Contact, WhatIDo } from "../Widgets";
 
 const Home = () => {
   return (
@@ -7,6 +7,7 @@ const Home = () => {
       <Banner />
       <About />
       <WhatIDo />
+      <Contact />
     </Layout>
   );
 };

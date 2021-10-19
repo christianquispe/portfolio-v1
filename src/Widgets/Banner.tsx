@@ -23,11 +23,11 @@ const Banner: React.FC = () => {
         </div>
         <div className="Banner__gb-img shadow-sm md:bg-white flex justify-start items-end md:items-center p-4 md:pl-4">
           <div className="bg-white rounded-md py-3 px-5">
-            <p className="text-3xl">
+            <h1 className="text-3xl text-blue-900 font-semibold lg:text-4xl">
               {t("title", {
                 locale,
               })}
-            </p>
+            </h1>
             <p>{t("label", {
                 locale,
               })}</p>

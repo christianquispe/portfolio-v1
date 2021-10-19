@@ -8,11 +8,11 @@ const About: React.FC = () => {
 
   return (
     <>
-      <Section bg="gray">
+      <Section bg="gray" id="aboutMe">
         <div className="flex container mx-auto gap-4">
           <div className="w-full lg:w-1/3 flex justify-center items-center">
             <div className="About__contain-left lg:rounded-lg lg:shadow-lg lg:py-4 lg:px-6 lg:absolute lg:max-w-lg">
-              <h2 className="About__title text-primary-100 text-2xl">
+              <h2 className="About__title text-3xl text-blue-900 font-semibold lg:text-4xl">
                 {t("title", { locale })}
               </h2>
               <p className="text-justify sm:text-left">
