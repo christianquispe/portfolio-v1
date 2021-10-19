@@ -71,7 +71,7 @@ const SkillsItem: React.FC<SkillsItemProps> = (props) => {
   );
 };
 
-const Portfolio: React.FC = () => {
+const WhatIDo: React.FC = () => {
   const t = useTranslations("WhatIDo");
   const { locale } = useRouter();
 
@@ -105,7 +105,7 @@ const Portfolio: React.FC = () => {
         .Portfolio__title::before {
           content: "";
           display: block;
-          background-color: rgb(4, 140, 52);
+          background-color: rgba(12, 74, 110, var(--tw-text-opacity));
           position: absolute;
           left: 0;
           right: 0;
@@ -125,4 +125,4 @@ const Portfolio: React.FC = () => {
     </>
   );
 };
-export default Portfolio;
+export default WhatIDo;

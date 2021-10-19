@@ -38,7 +38,7 @@ const About: React.FC = () => {
         .About__title::before {
           content: "";
           display: block;
-          background-color: rgb(4, 140, 52);
+          background-color: rgba(12, 74, 110, var(--tw-text-opacity));
           position: absolute;
           left: 0;
           bottom: -5px;
