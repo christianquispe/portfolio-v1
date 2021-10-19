@@ -10,7 +10,7 @@ interface LayoutProps {
 }
 
 const Layout: React.FC<LayoutProps> = ({ children, title }) => {
-  const t = useTranslations("Navigation");
+  const t = useTranslations("Layout");
   const { locale, locales, route } = useRouter();
   const otherLocale = locales?.find((cur) => cur !== locale);
 
@@ -20,29 +20,29 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
         <NavBar>
           <NavItem>
             <Link href="#aboutMe">
-              <a>{t("aboutMe", { locale })}</a>
+              <a>{t("Navigation.aboutMe", { locale })}</a>
             </Link>
           </NavItem>
           <NavItem>
             <Link href="#whatIDo">
-              <a>{t("whatIDo", { locale })}</a>
+              <a>{t("Navigation.whatIDo", { locale })}</a>
             </Link>
           </NavItem>
           <NavItem>
             <Link href="#portfolio">
-              <a>{t("portfolio", { locale })}</a>
+              <a>{t("Navigation.portfolio", { locale })}</a>
             </Link>
           </NavItem>
           <NavItem>
             <Link href="#contact">
-              <a>{t("contact", { locale })}</a>
+              <a>{t("Navigation.contact", { locale })}</a>
             </Link>
           </NavItem>
           <NavItem>
             <Link href={route} locale={otherLocale}>
               <a>
                 <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  {t("switchLocale", { locale: otherLocale })}
+                  {t("Navigation.switchLocale", { locale: otherLocale })}
                 </button>
               </a>
             </Link>
@@ -54,6 +54,9 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
         </Head>
       </header>
       {children}
+      <footer className="bg-gray-900 text-center text-white py-4 px-4">
+        <span>{t("Footer.message", { locale })}</span>
+      </footer>
     </>
   );
 };

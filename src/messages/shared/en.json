@@ -1,12 +1,17 @@
 {
-  "Navigation": {
-    "title": "Christian logo",
-    "aboutMe": "About me",
-    "contact": "Contact",
-    "whatIDo": "What I Do",
-    "portfolio": "Portfolio",
-    "switchLocale": "Spanish",
-    "spanish": "Spanish",
-		"english": "English"
+  "Layout": {
+    "Navigation": {
+      "title": "Christian logo",
+      "aboutMe": "About me",
+      "contact": "Contact",
+      "whatIDo": "What I Do",
+      "portfolio": "Portfolio",
+      "switchLocale": "Spanish",
+      "spanish": "Spanish",
+      "english": "English"
+    },
+    "Footer": {
+      "message": "Designed & Built by Cristian Quispe"
+    }
   }
 }

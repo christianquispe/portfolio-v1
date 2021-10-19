@@ -1,12 +1,17 @@
 {
-  "Navigation": {
-    "title": "Logo Christian",
-    "aboutMe": "Sobre mi",
-    "contact": "Contacto",
-    "whatIDo": "Lo que hago",
-    "portfolio": "Proyectos",
-    "switchLocale": "Inglés",
-    "spanish": "Español",
-    "english": "Inglés"
+  "Layout": {
+    "Navigation": {
+      "title": "Logo Christian",
+      "aboutMe": "Sobre mi",
+      "contact": "Contacto",
+      "whatIDo": "Lo que hago",
+      "portfolio": "Proyectos",
+      "switchLocale": "Inglés",
+      "spanish": "Español",
+      "english": "Inglés"
+    },
+    "Footer": {
+      "message": "Diseñado & Construido por Cristian Quispe"
+    }
   }
 }

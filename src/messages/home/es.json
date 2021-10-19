@@ -14,7 +14,8 @@
   "Contact": {
     "title": "Contacto",
     "placeEmail": "tucorreo@example.com",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit.",
+    "description": "No dude en enviarme un correo electrónico a través de <code>{email}</code>",
+    "subDescription": "O complete el siguiente formulario",
     "placeMessage": "Enviar un mensaje",
     "send": "Enviar"
   }
