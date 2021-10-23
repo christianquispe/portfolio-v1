@@ -78,23 +78,21 @@ const WhatIDo: React.FC = () => {
   return (
     <>
       <Section>
-        <div className="container">
-          <div className="max-w-md mx-auto mb-12">
-            <h2 className="Portfolio__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
-              {t("title", { locale })}
-            </h2>
-            <p className="text-justify sm:text-center">
-              {t("description", { locale })}
-            </p>
-          </div>
-          <Skills moreClass="max-w-3xl mx-auto">
-            {skills.map((skill, index) => (
-              <SkillsItem key={index} icon={skill.icon}>
-                {skill.name}
-              </SkillsItem>
-            ))}
-          </Skills>
+        <div className="max-w-md mx-auto mb-12">
+          <h2 className="Portfolio__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
+            {t("title", { locale })}
+          </h2>
+          <p className="text-justify sm:text-center">
+            {t("description", { locale })}
+          </p>
         </div>
+        <Skills moreClass="max-w-3xl mx-auto">
+          {skills.map((skill, index) => (
+            <SkillsItem key={index} icon={skill.icon}>
+              {skill.name}
+            </SkillsItem>
+          ))}
+        </Skills>
       </Section>
       <style jsx>{`
         .Portfolio__title {

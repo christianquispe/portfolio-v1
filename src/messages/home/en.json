@@ -18,5 +18,9 @@
     "subDescription": "Or fill in the contact form down below",
     "placeMessage": "Send a message",
     "send": "Send"
+  },
+  "Portfolio": {
+    "title": "Portfolio",
+    "description": "These are some of my projects"
   }
 }
