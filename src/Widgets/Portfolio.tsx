@@ -59,6 +59,7 @@ const Portfolio: React.FC = () => {
                 hasLink: true,
                 link: project.url,
                 tags: project.stack,
+                img: project.img
               }}
             />
           ))}

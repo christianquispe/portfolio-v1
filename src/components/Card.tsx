@@ -1,6 +1,7 @@
 interface CardData {
   title: string;
   description: string;
+  img: string;
   hasLink?: boolean;
   link?: string;
   tags?: string[];
@@ -12,13 +13,13 @@ interface CardProps {
 
 const Card: React.FC<CardProps> = (props) => {
   const { data } = props;
-  const { title, description, hasLink, link, tags } = data;
+  const { title, description, img, hasLink, link, tags } = data;
 
   const content = (
     <div className="overflow-hidden shadow-lg transition duration-500 ease-in-out transform hover:-translate-y-1 hover:shadow-2xl rounded-lg h-90 w-full cursor-pointer m-auto">
       <img
         alt="blog photo"
-        src="https://images.unsplash.com/photo-1542435503-956c469947f6?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80"
+        src={img}
         className="max-h-40 w-full object-cover"
       />
       <div className="bg-white w-full p-4">
