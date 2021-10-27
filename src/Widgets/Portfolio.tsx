@@ -1,11 +1,27 @@
 import { useRouter } from "next/router";
 import { useTranslations } from "use-intl";
 import { Card, Section } from "../Components";
+import Carousel from "react-multi-carousel";
 import constants from "../helpers/helpers.constants";
 
 const Portfolio: React.FC = () => {
   const t = useTranslations("Portfolio");
   const { locale } = useRouter();
+
+  const responsive = {
+    desktop: {
+      breakpoint: { max: 3000, min: 1024 },
+      items: 4,
+    },
+    tablet: {
+      breakpoint: { max: 1024, min: 464 },
+      items: 3,
+    },
+    mobile: {
+      breakpoint: { max: 464, min: 0 },
+      items: 2,
+    },
+  };
 
   return (
     <>
@@ -19,7 +35,15 @@ const Portfolio: React.FC = () => {
           </p>
           <br />
         </div>
-        <div className="flex justify-around items-center flex-wrap gap-4">
+
+        <Carousel
+          responsive={responsive}
+          ssr
+          showDots={false}
+          slidesToSlide={1}
+          infinite={false}
+          deviceType={""}
+        >
           {constants.portfolio.projects.map((project, index) => (
             <Card
               key={project.url + "-" + index}
@@ -32,7 +56,7 @@ const Portfolio: React.FC = () => {
               }}
             />
           ))}
-        </div>
+        </Carousel>
       </Section>
       <style jsx>{`
         .Portfolio__title {

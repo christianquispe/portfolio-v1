@@ -1,6 +1,10 @@
 import { NextIntlProvider } from "next-intl";
 
+// Tailwindcss
 import "tailwindcss/tailwind.css";
+
+// React-multi-carousel
+import 'react-multi-carousel/lib/styles.css'
 
 function MyApp({ Component, pageProps }) {
   return (
