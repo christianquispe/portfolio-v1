@@ -50,7 +50,7 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
         </NavBar>
         <Head>
           <title>{title}</title>
-          <link rel="icon" href="/icons/logo.svg" type="image/x-icon" />
+          <link rel="icon" href="/icons/favicon.ico" type="image/x-icon" />
         </Head>
       </header>
       {children}
