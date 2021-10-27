@@ -14,7 +14,7 @@
   "Contact": {
     "title": "Contact",
     "placeEmail": "youremailexample@example.com",
-    "description": "Feel free to email me via {email}",
+    "description": "Feel free to email me via <code>{email}</code>",
     "subDescription": "Or fill in the contact form down below",
     "placeMessage": "Send a message",
     "send": "Send"

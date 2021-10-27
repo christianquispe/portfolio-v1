@@ -11,7 +11,7 @@ import {
   DiMongodb,
 } from "react-icons/di";
 import { useTranslations } from "use-intl";
-import { Section } from "../Components";
+import { Section } from "../components";
 import { SvgJavascript } from "../icons";
 
 const skills = [

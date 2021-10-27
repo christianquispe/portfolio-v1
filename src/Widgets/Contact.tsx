@@ -18,7 +18,7 @@ const Contact: React.FC = () => {
             <h2 className="Contact__title text-center text-3xl text-blue-900 font-semibold lg:text-4xl">
               {t("title", { locale })}
             </h2>
-            <p className="text-center mb-2">
+            <p className="text-center mb-4">
               {t.rich("description", {
                 locale,
                 code: (child) => (

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 import { useTranslations } from "use-intl";
-import { Card, Section } from "../Components";
+import { Card, Section } from "../components";
 import Carousel from "react-multi-carousel";
 import constants from "../helpers/helpers.constants";
 
@@ -14,23 +14,27 @@ const Portfolio: React.FC = () => {
       items: 4,
     },
     tablet: {
-      breakpoint: { max: 1024, min: 464 },
+      breakpoint: { max: 1024, min: 700 },
       items: 3,
+    },
+    semiTablet: {
+      breakpoint: { max: 700, min: 464 },
+      items: 2,
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 2,
+      items: 1,
     },
   };
 
   return (
     <>
       <Section bg="gray">
-        <div className="max-w-md mx-auto mb-12">
+        <div className="max-w-md mx-auto md:mb-12">
           <h2 className="Portfolio__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
             {t("title", { locale })}
           </h2>
-          <p className="text-justify sm:text-center">
+          <p className="text-center">
             {t("description", { locale })}
           </p>
           <br />
@@ -42,6 +46,8 @@ const Portfolio: React.FC = () => {
           showDots={false}
           slidesToSlide={1}
           infinite={false}
+          containerClass="items-stretch"
+          itemClass="p-3"
           deviceType={""}
         >
           {constants.portfolio.projects.map((project, index) => (

@@ -1,6 +1,6 @@
 import { useRouter } from "next/dist/client/router";
 import { useTranslations } from "use-intl";
-import { Section } from "../Components";
+import { Section } from "../components";
 
 const About: React.FC = () => {
   const t = useTranslations("AboutMe");
