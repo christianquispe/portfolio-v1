@@ -1,7 +1,8 @@
 import { NextIntlProvider } from "next-intl";
 
 // Tailwindcss
-import "tailwindcss/tailwind.css";
+// import "tailwindcss/tailwind.css";
+import "../styles/globals.css";
 
 // React-multi-carousel
 import 'react-multi-carousel/lib/styles.css'

@@ -77,7 +77,7 @@ const WhatIDo: React.FC = () => {
 
   return (
     <>
-      <Section>
+      <Section id="whatIDo">
         <div className="max-w-md mx-auto mb-12">
           <h2 className="WhatIDo__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
             {t("title", { locale })}

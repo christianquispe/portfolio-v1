@@ -29,7 +29,7 @@ const Portfolio: React.FC = () => {
 
   return (
     <>
-      <Section bg="gray">
+      <Section bg="gray" id="portfolio">
         <div className="max-w-md mx-auto md:mb-12">
           <h2 className="Portfolio__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
             {t("title", { locale })}
