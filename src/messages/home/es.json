@@ -5,15 +5,15 @@
   },
   "AboutMe": {
     "title": "Sobre mi",
-    "description": "Hola, soy Christian Quispe, soy autodidacta, tengo 20 años y soy de Lima - Peru. Trabajo como desarrollador Front End y poco de Backend. Me gustan los libros, el ejedrez, el baloncesto ¡Y programar!"
+    "description": "Hola, soy Christian Quispe, autodidacta, tengo 20 años y de Lima - Peru. Trabajo como desarrollador Front End y algo de Backend. Me gustan los libros, el ejedrez, el baloncesto ¡Y programar!"
   },
   "WhatIDo": {
     "title": "Lo que hago",
-    "description": "Aquí listo las lenguajes y librerías que utilizo al programar. Todo lo aprendí de manera autodidacta."
+    "description": "Aquí listo los lenguajes y librerías que utilizo al programar. Todo lo aprendí de manera autodidacta."
   },
   "Contact": {
     "title": "Contacto",
-    "placeName": "Christian Quispe",
+    "placeName": "Ingrese su nombre aquí",
     "placeEmail": "tucorreo@example.com",
     "placeMessage": "Enviar un mensaje",
     "errName": "Por favor ingrese su nombre",
@@ -27,7 +27,7 @@
     "sendAgain": "Enviar de nuevo"
   },
   "Portfolio": {
-    "title": "Portfolio",
+    "title": "Portafolio",
     "description": "Estos son algunos de mis proyectos"
   }
 }
