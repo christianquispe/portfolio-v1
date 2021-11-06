@@ -32,8 +32,6 @@ const ContactForm: React.FC = () => {
     }
   };
 
-  console.log(recaptchaInstance);
-
   // Hooks
   const t = useTranslations("Contact");
   const { locale } = useRouter();
