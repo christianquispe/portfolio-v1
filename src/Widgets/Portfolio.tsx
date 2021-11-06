@@ -34,9 +34,7 @@ const Portfolio: React.FC = () => {
           <h2 className="Portfolio__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
             {t("title", { locale })}
           </h2>
-          <p className="text-center">
-            {t("description", { locale })}
-          </p>
+          <p className="text-center">{t("description", { locale })}</p>
           <br />
         </div>
 
@@ -46,7 +44,9 @@ const Portfolio: React.FC = () => {
           showDots={false}
           slidesToSlide={1}
           infinite={false}
-          containerClass="items-stretch"
+          containerClass={`items-stretch${
+            constants.portfolio.projects.length < 4 ? " md:justify-center" : ""
+          }`}
           itemClass="p-3"
           deviceType={""}
         >
@@ -59,7 +59,7 @@ const Portfolio: React.FC = () => {
                 hasLink: true,
                 link: project.url,
                 tags: project.stack,
-                img: project.img
+                img: project.img,
               }}
             />
           ))}
