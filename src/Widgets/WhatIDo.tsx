@@ -79,7 +79,7 @@ const WhatIDo: React.FC = () => {
     <>
       <Section>
         <div className="max-w-md mx-auto mb-12">
-          <h2 className="Portfolio__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
+          <h2 className="WhatIDo__title text-center text-blue-900 font-semibold text-3xl lg:text-4xl">
             {t("title", { locale })}
           </h2>
           <p className="text-justify sm:text-center">
@@ -95,12 +95,12 @@ const WhatIDo: React.FC = () => {
         </Skills>
       </Section>
       <style jsx>{`
-        .Portfolio__title {
+        .WhatIDo {
           position: relative;
           margin-bottom: 1.5rem;
         }
 
-        .Portfolio__title::before {
+        .WhatIDo::before {
           content: "";
           display: block;
           background-color: rgba(12, 74, 110, var(--tw-text-opacity));

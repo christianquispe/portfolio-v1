@@ -5,11 +5,11 @@
   },
   "AboutMe": {
     "title": "About me",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugit, corrupti neque veritatis soluta ut ipsa sed eligendi id natus necessitatibus provident atque quibusdam ex, quos molestias tempore ius. Quae."
+    "description": "Hello, I am Christian Quispe, I am 20 years old and I am from Lima - Peru. I work as a Front End developer and little as a Backend. I like books, chess, basketball and programming!"
   },
   "WhatIDo": {
     "title": "What I do",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugit, corrupti neque veritatis soluta ut ipsa sed eligendi id natus necessitatibus provident atque quibusdam ex, quos molestias tempore ius. Quae."
+    "description": "Here I list the languages ​​and libraries that I use when programming. I learned everything in a self-taught way."
   },
   "Contact": {
     "title": "Contact",

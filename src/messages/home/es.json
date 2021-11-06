@@ -5,11 +5,11 @@
   },
   "AboutMe": {
     "title": "Sobre mi",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugit, corrupti neque veritatis soluta ut ipsa sed eligendi id natus necessitatibus provident atque quibusdam ex, quos molestias tempore ius. Quae."
+    "description": "Hola, soy Christian Quispe, soy autodidacta, tengo 20 años y soy de Lima - Peru. Trabajo como desarrollador Front End y poco de Backend. Me gustan los libros, el ejedrez, el baloncesto ¡Y programar!"
   },
   "WhatIDo": {
     "title": "Lo que hago",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic, fugit, corrupti neque veritatis soluta ut ipsa sed eligendi id natus necessitatibus provident atque quibusdam ex, quos molestias tempore ius. Quae."
+    "description": "Aquí listo las lenguajes y librerías que utilizo al programar. Todo lo aprendí de manera autodidacta."
   },
   "Contact": {
     "title": "Contacto",
@@ -21,6 +21,6 @@
   },
   "Portfolio": {
     "title": "Portfolio",
-    "description": "These are some of my projects"
+    "description": "Estos son algunos de mis proyectos"
   }
 }
