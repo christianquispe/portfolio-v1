@@ -1,6 +1,7 @@
 import { useTranslations } from "use-intl";
 import { useRouter } from "next/router";
 import { IoLogoInstagram, IoLogoLinkedin, IoLogoGithub } from "react-icons/io";
+import { ContactForm } from ".";
 
 const Contact: React.FC = () => {
   const t = useTranslations("Contact");
@@ -29,31 +30,7 @@ const Contact: React.FC = () => {
                 email: "christianquispecamasca@gmail.com",
               })}
             </p>
-            <form action="" className="w-full md:w-4/5 mx-auto">
-              <p className="text-left mb-1">
-                {t("subDescription", {
-                  locale,
-                })}
-              </p>
-              <div className="mb-4">
-                <input
-                  placeholder={t("placeEmail", { locale })}
-                  type="text"
-                  className="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                />
-              </div>
-              <div className="mb-4">
-                <textarea
-                  placeholder={t("placeMessage", { locale })}
-                  className="w-full shadow appearance-none border rounded py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline"
-                />
-              </div>
-              <div className="flex justify-center">
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
-                  {t("send", { locale: locale })}
-                </button>
-              </div>
-            </form>
+            <ContactForm />
           </div>
           <div className="h-48 bg-gray-900"></div>
         </div>
