@@ -12,7 +12,7 @@ import {
 } from "react-icons/di";
 import { useTranslations } from "use-intl";
 import { Section } from "../components";
-import { SvgJavascript } from "../icons";
+import { SvgJavascript, SvgTypescript, SvgExpress, SvgGraphql } from "../icons";
 
 const skills = [
   { name: "HTML", icon: <DiHtml5 /> },
@@ -21,10 +21,10 @@ const skills = [
   { name: "CSS", icon: <DiCss3 /> },
   { name: "Javascript", icon: <SvgJavascript /> },
   { name: "React", icon: <DiReact /> },
-  { name: "Typescript", icon: <DiTypo3 /> },
-  { name: "Graphql", icon: <DiJsBadge /> },
+  { name: "Typescript", icon: <SvgTypescript /> },
+  { name: "Graphql", icon: <SvgGraphql /> },
   { name: "Node", icon: <DiNodejs /> },
-  { name: "Express", icon: <DiJsBadge /> },
+  { name: "Express", icon: <SvgExpress /> },
   { name: "Mongo DB", icon: <DiMongodb /> },
 ];
 
