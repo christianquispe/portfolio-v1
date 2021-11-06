@@ -1,8 +1,12 @@
 import { useFormik } from "formik";
 import { useRouter } from "next/router";
-import { useTranslations } from "use-intl";
-import emailjs from "emailjs-com";
 import { useState } from "react";
+
+import { useTranslations } from "use-intl";
+
+import * as ga from "../lib/ga";
+
+import emailjs from "emailjs-com";
 import Recaptcha from "react-recaptcha";
 
 // Implemente el captcha gracia a este blog https://dev.to/richardsprins/simple-contact-form-with-nextjs-emailjs-3che?signin=true
@@ -31,6 +35,16 @@ const ContactForm: React.FC = () => {
       setFieldValue("validCaptcha", true);
       setIsVerified(true);
     }
+  };
+
+  const triggerEventSubmitGa = () => {
+    ga.event({
+      action: "contact",
+      params: {
+        event_label: "contact_with_me",
+        event_category: "form",
+      },
+    });
   };
 
   // Hooks
@@ -73,6 +87,7 @@ const ContactForm: React.FC = () => {
             resetForm();
             setSuccessful(true);
             resetRecaptcha();
+            triggerEventSubmitGa();
           })
           .catch((err) => {
             console.log(err, "Error");
