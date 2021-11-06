@@ -13,11 +13,14 @@
   },
   "Contact": {
     "title": "Contact",
+    "placeName": "Christian Quispe",
     "placeEmail": "youremailexample@example.com",
     "description": "Feel free to email me via <code>{email}</code>",
     "subDescription": "Or fill in the contact form down below",
     "placeMessage": "Send a message",
-    "send": "Send"
+    "send": "Send",
+    "successfulMessage": "I have received your message successfully, I will contact you very soon.",
+    "sendAgain": "Send again"
   },
   "Portfolio": {
     "title": "Portfolio",
