@@ -11,7 +11,7 @@ const Contact: React.FC = () => {
     <>
       <section id="contact">
         <div className="relative">
-          <div className="h-48 bg-gray-100"></div>
+          <div className="h-72 bg-gray-100"></div>
           <div
             className="absolute left-0 right-0 top-0 bottom-0 m-auto max-w-2xl bg-white p-8 md:rounded-lg shadow-lg"
             style={{ height: "fit-content" }}
@@ -32,7 +32,7 @@ const Contact: React.FC = () => {
             </p>
             <ContactForm />
           </div>
-          <div className="h-48 bg-gray-900"></div>
+          <div className="h-72 bg-gray-900"></div>
         </div>
         <div className="bg-gray-900">
           <div className="py-10 max-w-2xl mx-auto">
