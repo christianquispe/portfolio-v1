@@ -28,6 +28,7 @@ const ContactForm: React.FC = () => {
 
   const verifiedRecaptcha = (response) => {
     if (response) {
+      setFieldValue("validCaptcha", true);
       setIsVerified(true);
     }
   };
@@ -44,12 +45,13 @@ const ContactForm: React.FC = () => {
     isValid,
     handleBlur,
     resetForm,
-    status,
+    setFieldValue,
   } = useFormik({
     initialValues: {
       name: "",
       email: "",
       message: "",
+      validCaptcha: false,
     },
     onSubmit: (values) => {
       const templateParams = {
@@ -82,13 +84,24 @@ const ContactForm: React.FC = () => {
     validate: (values) => {
       const errors = {} as any;
       if (values.name.length === 0) {
-        errors.name = "Este campo es requerido";
+        errors.name = t("errName", {
+          locale,
+        });
       }
       if (values.email.length === 0) {
-        errors.email = "Este campo es requerido";
+        errors.email = t("errEmail", {
+          locale,
+        });
       }
       if (values.message.length === 0) {
-        errors.message = "Este campo es requerido";
+        errors.message = t("errMessage", {
+          locale,
+        });
+      }
+      if (!values.validCaptcha) {
+        errors.validCaptcha = t("errCaptcha", {
+          locale,
+        });
       }
       return errors;
     },
@@ -168,7 +181,7 @@ const ContactForm: React.FC = () => {
               <span>&nbsp;</span>
             )}
           </div>
-          <div className="w-full flex justify-center items-center mb-4">
+          <div className="w-full flex justify-center items-center">
             <Recaptcha
               ref={(e) => (recaptchaInstance = e)}
               sitekey={process.env.NEXT_PUBLIC_RECAPTCHA_SITE_KEY}
@@ -177,6 +190,13 @@ const ContactForm: React.FC = () => {
               verifyCallback={verifiedRecaptcha}
             />
           </div>
+          {!isValid && errors.validCaptcha ? (
+            <span className="text-red-500 text-center w-full block mb-1">
+              {errors.validCaptcha}
+            </span>
+          ) : (
+            <span>&nbsp;</span>
+          )}
           <div className="flex justify-center">
             <button
               type="submit"
