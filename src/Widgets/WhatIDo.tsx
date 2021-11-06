@@ -95,12 +95,12 @@ const WhatIDo: React.FC = () => {
         </Skills>
       </Section>
       <style jsx>{`
-        .WhatIDo {
+        .WhatIDo__title {
           position: relative;
           margin-bottom: 1.5rem;
         }
 
-        .WhatIDo::before {
+        .WhatIDo__title::before {
           content: "";
           display: block;
           background-color: rgba(12, 74, 110, var(--tw-text-opacity));
@@ -114,7 +114,7 @@ const WhatIDo: React.FC = () => {
         }
 
         @media screen and (min-width: 1024px) {
-          .Portfolio__contain-left {
+          .WhatIDo__contain-left {
             transform: translateX(8rem);
             background-color: #ffffff;
           }
