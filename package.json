@@ -5,14 +5,15 @@
   "author": "christianquispe <christianquispecamasca@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "emailjs": "^3.6.0",
+    "emailjs-com": "^3.2.0",
     "formik": "^2.2.9",
     "next": "^12.0.3",
     "next-intl": "^2.0.5",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.3.1",
-    "react-multi-carousel": "^2.6.5"
+    "react-multi-carousel": "^2.6.5",
+    "react-recaptcha": "^2.3.10"
   },
   "scripts": {
     "dev": "next",
@@ -21,6 +22,7 @@
   },
   "devDependencies": {
     "@types/react": "^17.0.29",
+    "@types/react-recaptcha": "^2.3.4",
     "autoprefixer": "^10.3.7",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.17",
