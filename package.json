@@ -5,6 +5,8 @@
   "author": "christianquispe <christianquispecamasca@gmail.com>",
   "license": "MIT",
   "dependencies": {
+    "emailjs": "^3.6.0",
+    "formik": "^2.2.9",
     "next": "^12.0.3",
     "next-intl": "^2.0.5",
     "react": "^17.0.2",
