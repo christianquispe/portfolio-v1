@@ -1,8 +1,11 @@
 import { useRouter } from "next/dist/client/router";
 import Head from "next/head";
 import Link from "next/link";
-import { useTranslations } from "use-intl";
 import { SvgSpain, SvgUsa } from "../icons";
+
+import { useTranslations } from "use-intl";
+
+import { Buttom } from "../components";
 
 import { NavBar, Item as NavItem } from "./NavBar";
 
@@ -44,12 +47,12 @@ const Layout: React.FC<LayoutProps> = ({ children, title }) => {
           <NavItem>
             <Link href={route} locale={otherLocale}>
               <a>
-                <button className="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">
+                <Buttom>
                   <div className="flex items-center gap-1">
                     {otherLocale === "es" ? <SvgSpain /> : <SvgUsa />}
                     {t("Navigation.switchLocale", { locale: otherLocale })}
                   </div>
-                </button>
+                </Buttom>
               </a>
             </Link>
           </NavItem>
