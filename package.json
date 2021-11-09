@@ -18,12 +18,16 @@
   "scripts": {
     "dev": "next",
     "start": "next start",
-    "build": "next build"
+    "build": "next build",
+    "test": "jest"
   },
   "devDependencies": {
+    "@types/jest": "^27.0.2",
     "@types/react": "^17.0.29",
     "@types/react-recaptcha": "^2.3.4",
     "autoprefixer": "^10.3.7",
+    "babel-jest": "^27.3.1",
+    "jest": "^27.3.1",
     "postcss": "^8.3.9",
     "tailwindcss": "^2.2.17",
     "typescript": "^4.4.4"
